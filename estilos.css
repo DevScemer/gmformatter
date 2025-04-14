@@ -6,10 +6,12 @@ body {
   
   nav {
     background-color: #3a4fff;
-    padding: 1rem;
+    padding: 10px;
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;         /* Añade esto */
+    align-items: center;   /* Centra verticalmente */
   }
   
   nav ul {
@@ -18,8 +20,10 @@ body {
     padding: 0;
     display: flex;
     gap: 1rem;
+    margin-left: auto; /* Esta línea los empuja a la derecha */
   }
   
+
   nav a {
     color: white;
     text-decoration: none;
@@ -28,7 +32,7 @@ body {
   
   section {
     padding: 100px 20px;
-    min-height: 100vh;
+    min-height: 50vh;
   }
   
   #inicio {
@@ -89,18 +93,22 @@ body {
   #imginicio{
     width: 30%;
     height: 30%;
-    float: left;
+    justify-content: left;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   #inicio{
     display: flex;
-    justify-content: space-between; /* separa los elementos */
+    justify-content: space-between;
   }
   
   #textoinicio{
-    float: right;
+    justify-content: right;
+    padding-right: 10%;
+    text-align: justify;
   }
 
   #navicon{
-    width: 35px;
+    width: 40px;
   }
