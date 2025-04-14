@@ -5,7 +5,7 @@ body {
   }
   
   nav {
-    background-color: #333;
+    background-color: #3a4fff;
     padding: 1rem;
     position: sticky;
     top: 0;
@@ -86,4 +86,21 @@ body {
     background-color: #555;
   }
   
+  #imginicio{
+    width: 30%;
+    height: 30%;
+    float: left;
+  }
+
+  #inicio{
+    display: flex;
+    justify-content: space-between; /* separa los elementos */
+  }
   
+  #textoinicio{
+    float: right;
+  }
+
+  #navicon{
+    width: 35px;
+  }
