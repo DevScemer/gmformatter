@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Ubuntu&display=swap');
+
+  body {
+    font-family: "Ubuntu", Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+  
+  nav {
+    background: linear-gradient(0deg, #3a4fff, #6779ff);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;         /* Añade esto */
+    align-items: center;   /* Centra verticalmente */
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin-left: auto; /* Esta línea los empuja a la derecha */
+  }
+
+  nav a {
+      color: #efefef;
+      letter-spacing: .5px;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: bold;
+      margin-right: 10px;
+      position: relative; /* Necesario para el pseudo-elemento */
+  }
+
+  nav a:hover {
+      color: #fff;
+  }
+
+  /* Subrayado animado */
+  nav a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #fff;
+      transition: width 0.5s ease-in-out;
+  }
+
+  nav a:hover::after {
+      width: 100%;
+  }
+  
+  section {
+    min-height: 52vh;
+  }
+  
+  #inicio {
+    background-color: #f5f5f5;
+    background: linear-gradient(45deg, #6a67ff, transparent);
+    padding: 100px 20px;
+  }
+  
+  #caracteristicas {
+    background-color: #f9f9f9;
+    padding: 20px 20px;
+  }
+
+  h1, h2{
+    text-align: center;
+    font-size: 36px;
+  }
+
+  h3{
+    font-size: 25px;
+  }
+
+  .logo_caract{
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo_caract img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .icono_caract{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+  }
+
+  .yticon{
+    vertical-align: middle;
+    width: 21px;
+    height: 14px;
+    margin-right: 3px;
+    margin-bottom: 4px;
+  }
+
+  .contenedor_caracteristica{
+    display: flex;
+    width: 80%;
+    height: 45vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+  }
+
+  .contenedor_caracteristica ul{
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .contenedor_caracteristica ul li{
+    margin-bottom: 5px;
+  }
+
+  .contenedor_caracteristica:nth-child(even){
+    display: flex;
+    text-align: left;
+  }
+
+  .contenedor_caracteristica:nth-child(odd){
+    display: flex;
+    text-align: right;
+  }
+
+  .texto_caract{
+    width: 50%;
+  }
+
+  .imagen_caract{
+    width: 45vh;
+    width: 50%;
+    height: 40vh;
+  }
+
+  .imagen_caract img{
+    box-shadow: 3px 3px 20px 10px #000a;
+  }
+
+  .imagen_caract:nth-child(even){
+    display: flex;
+    justify-content: right;
+  }
+
+  .imagen_caract:nth-child(odd){
+    display: flex;
+    justify-content: left;
+  }
+  
+  #descargar {
+    background-color: #486271;
+  }
+
+  #descargar h2{
+    margin-top: 0;
+    padding-top: 3%;
+    color: white;
+  }
+
+  #descargar p{
+    text-align: center;
+    color: white;
+  }
+  
+  #contacto {
+    background-color: #fff;
+  }
+
+  #contacto h2{
+    margin-top: 0;
+    padding-top: 3%;
+  }
+
+  #contacto ul{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+  }
+  
+  .btn-descarga {
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+  }
+  
+  .btn-descarga:hover {
+    background-color: #555;
+    transform: scale(1.2);
+    transition: all .5s ease-in-out;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+
+  #windows_logo{
+    height: 80px;
+    width: 80px;
+  }
+
+  .btn-descarga {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  .btn-descarga:hover {
+    background-color: #555;
+  }
+  
+  #imginicio{
+    width: 30%;
+    height: 30%;
+    justify-content: left;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #inicio{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #textoinicio{
+    justify-content: right;
+    padding-right: 10%;
+    text-align: justify;
+  }
+
+  #navicon{
+    width: 40px;
+  }
